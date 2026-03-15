@@ -1,0 +1,1 @@
+{"success": true, "summary": "Confirmed ~/remote-mcp-server already has ESLint configured with @eslint/js recommended rules and typescript-eslint recommended rules in eslint.config.mjs. Verification passed: `cd ~/remote-mcp-server && npx eslint --print-config src/index.ts 2>/dev/null | head -5` returned the generated ESLint config."}
