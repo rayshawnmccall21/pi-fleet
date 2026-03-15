@@ -1,0 +1,1 @@
+{"success": true, "summary": "Created ~/remote-mcp-server/tsconfig.json with strict NodeNext TypeScript settings, ES2022 target, dist output, and src/tests includes. Verification passed: `cd ~/remote-mcp-server && npx tsc --version` returned `Version 5.9.2`."}

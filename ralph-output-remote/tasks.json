@@ -2,8 +2,8 @@
   "prd": "PRD",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 709,
-  "completedTasks": 0,
-  "failedTasks": 0,
+  "completedTasks": 1,
+  "failedTasks": 1,
   "tasks": [
     {
       "id": 1,
@@ -13,8 +13,11 @@
       "verification": "ls -la ~/remote-mcp-server/src",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T21:59:56.892Z",
+      "completedAt": "2026-03-15T22:00:55.238Z",
+      "verifiedAt": "2026-03-15T22:00:55.254Z"
     },
     {
       "id": 2,
@@ -25,7 +28,10 @@
       "expectedResult": "",
       "dependencies": [],
       "completed": false,
-      "failed": false
+      "failed": true,
+      "startedAt": "2026-03-15T22:04:30.207Z",
+      "completedAt": "2026-03-15T22:04:42.914Z",
+      "error": "Verification failed: Verification failed: Command failed: bash -c 'cat ~/remote-mcp-server/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).name\"'\n[eval]:1\nJSON.parse(require(fs).readFileSync(/dev/stdin,utf8)).name\n                                    ^\nUnknown regular expression flags.\n\nSyntaxError: Invalid regular expression flags\n    at makeContextifyScript (node:internal/vm:194:14)\n    at compileScript (node:internal/process/execution:388:10)\n    at evalTypeScript (node:internal/process/execution:260:22)\n    at node:internal/main/eval_string:71:3\n\nNode.js v25.7.0\n\nStderr: [eval]:1\nJSON.parse(require(fs).readFileSync(/dev/stdin,utf8)).name\n                                    ^\nUnknown regular expression flags.\n\nSyntaxError: Invalid regular expression flags\n    at makeCo"
     },
     {
       "id": 3,
