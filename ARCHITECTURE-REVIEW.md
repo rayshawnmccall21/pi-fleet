@@ -21,12 +21,14 @@ Pi Fleet is a well-conceived distributed agent orchestration system. The PRD is 
 ### 1. **Process Lifecycle Guarantees**
 
 The PRD says "tmux-backed Pi sessions" but doesn't address what happens when:
+
 - Pi crashes mid-task (not just "auto-restart" — what state do we recover?)
 - The bridge server itself restarts (do we reconnect to existing tmux sessions or recreate?)
 - A Pi session hangs (not crashed, just stuck waiting for input)
 - Multiple bridge restarts happen in quick succession
 
 **What we need:** Explicit state recovery protocol. When bridge starts, it should:
+
 1. Scan existing tmux sessions
 2. Match them to persisted task state
 3. Re-establish health monitoring
@@ -35,6 +37,7 @@ The PRD says "tmux-backed Pi sessions" but doesn't address what happens when:
 ### 2. **Rate Limiting and Backpressure**
 
 The PRD mentions rate limiting in the security section but never specifies:
+
 - What happens when 5 agents all try to run `pnpm test` simultaneously?
 - How do we prevent a runaway agent from creating 1000 knowledge entries?
 - What's the backpressure strategy when the task queue exceeds capacity?
@@ -44,12 +47,14 @@ The PRD mentions rate limiting in the security section but never specifies:
 ### 3. **Deployment and Installation**
 
 There's no mention of how the bridge server gets installed on a worker device. Looking at bridge-standalone.js, it hardcodes paths like:
+
 ```javascript
 const PI = "/Users/autumnraymccall/.nvm/versions/node/v24.14.0/bin/pi";
 const TMUX = "/usr/local/bin/tmux";
 ```
 
 This won't work on any other machine. We need:
+
 - A setup script that discovers tool locations
 - Environment validation on startup
 - Graceful degradation when optional tools are missing
@@ -65,6 +70,7 @@ The PRD mentions WebSocket transport in the protocol layer but the bridge server
 ### 6. **Graceful Shutdown**
 
 No mention of how to shut down cleanly:
+
 - Finish in-flight verifications?
 - Wait for agents to reach a safe point?
 - Persist pending mailbox messages?
@@ -79,6 +85,7 @@ No mention of how to shut down cleanly:
 **Current approach:** Spawn Pi in tmux, interact via `tmux send-keys` and `tmux capture-pane`.
 
 **Problems with tmux:**
+
 - `capture-pane` returns formatted terminal output (ANSI codes, line wrapping) — parsing this for structured data is fragile
 - `send-keys` with special characters requires careful escaping
 - tmux sessions survive bridge restarts but we lose context about what was happening
@@ -91,30 +98,31 @@ class AgentSession {
   private pty: IPty;
   private buffer: CircularBuffer<string>;
   private state: SessionState;
-  
+
   constructor(config: SessionConfig) {
     this.pty = spawn(config.command, [], {
-      name: 'xterm-256color',
+      name: "xterm-256color",
       cwd: config.workingDirectory,
       env: { ...process.env, ...config.env },
       cols: 120,
-      rows: 40
+      rows: 40,
     });
-    
+
     this.pty.onData((data) => {
       this.buffer.push(data);
-      this.emit('output', data);
+      this.emit("output", data);
     });
-    
+
     this.pty.onExit(({ exitCode, signal }) => {
-      this.state = exitCode === 0 ? 'completed' : 'crashed';
-      this.emit('exit', { exitCode, signal });
+      this.state = exitCode === 0 ? "completed" : "crashed";
+      this.emit("exit", { exitCode, signal });
     });
   }
 }
 ```
 
 **Benefits:**
+
 - Direct access to raw output stream (no ANSI stripping needed)
 - Process lifecycle events (onExit, onData)
 - Can set resource limits via options
@@ -149,6 +157,7 @@ bridge/
 ```
 
 **Key decision:** Use SQLite (via better-sqlite3) for ALL persistent state:
+
 - Sessions and their metadata
 - Tasks and state transitions
 - Knowledge entries
@@ -157,6 +166,7 @@ bridge/
 - Audit log
 
 This gives us:
+
 - ACID transactions
 - Fast queries with indexes
 - Single file backup (`cp fleet.db fleet.db.bak`)
@@ -172,35 +182,35 @@ class BridgeServer {
   async start() {
     // 1. Initialize database (create tables if needed)
     await this.storage.initialize();
-    
+
     // 2. Clean up any orphaned state from previous run
     await this.cleanup();
-    
+
     // 3. Start HTTP server
     this.server = this.app.listen(PORT);
-    
+
     // 4. Start WebSocket server
     this.wss = new WebSocketServer({ server: this.server });
-    
+
     // 5. Log ready
     logger.info(`Bridge ready on port ${PORT}`);
   }
-  
+
   async shutdown() {
     // 1. Stop accepting new connections
     this.server.close();
-    
+
     // 2. Signal all sessions to save state
     for (const session of this.sessions.values()) {
       await session.checkpoint();
     }
-    
+
     // 3. Wait for in-flight verifications (with timeout)
     await this.verification.drain(30_000);
-    
+
     // 4. Close database
     await this.storage.close();
-    
+
     process.exit(0);
   }
 }
@@ -219,19 +229,19 @@ Instead of hardcoded paths, use a cascading config:
 
 const config = {
   bridge: {
-    port: parseInt(process.env.PI_BRIDGE_PORT || '4001'),
-    host: process.env.PI_BRIDGE_HOST || '0.0.0.0',
+    port: parseInt(process.env.PI_BRIDGE_PORT || "4001"),
+    host: process.env.PI_BRIDGE_HOST || "0.0.0.0",
   },
   tools: {
-    pi: process.env.PI_BIN || await which('pi'),
-    tmux: process.env.TMUX_BIN || await which('tmux'),
+    pi: process.env.PI_BIN || (await which("pi")),
+    tmux: process.env.TMUX_BIN || (await which("tmux")),
     node: process.env.NODE_BIN || process.execPath,
-    git: process.env.GIT_BIN || await which('git'),
+    git: process.env.GIT_BIN || (await which("git")),
   },
   project: {
     root: process.env.PI_PROJECT_ROOT || process.cwd(),
     // ...
-  }
+  },
 };
 ```
 
@@ -243,11 +253,22 @@ Replace the ad-hoc result collection with a proper event stream:
 interface FleetEvent {
   id: string;
   timestamp: string;
-  type: 'session.created' | 'session.destroyed' | 'session.output' |
-        'task.assigned' | 'task.started' | 'task.completed' | 'task.failed' |
-        'verification.started' | 'verification.passed' | 'verification.failed' |
-        'git.branch.created' | 'git.committed' | 'git.pr.created' |
-        'knowledge.stored' | 'mailbox.delivered';
+  type:
+    | "session.created"
+    | "session.destroyed"
+    | "session.output"
+    | "task.assigned"
+    | "task.started"
+    | "task.completed"
+    | "task.failed"
+    | "verification.started"
+    | "verification.passed"
+    | "verification.failed"
+    | "git.branch.created"
+    | "git.committed"
+    | "git.pr.created"
+    | "knowledge.stored"
+    | "mailbox.delivered";
   source: { device: string; session?: string };
   data: Record<string, unknown>;
 }
@@ -264,6 +285,7 @@ interface FleetEvent {
 ### 1. **Reliable Output Capture and Parsing** — Difficulty: 9/10
 
 **Why it's hard:** Pi agents output to a terminal. Terminal output contains:
+
 - ANSI escape codes (colors, cursor movement)
 - Line wrapping at terminal width
 - Progress indicators that update in-place
@@ -272,6 +294,7 @@ interface FleetEvent {
 Extracting structured information (task completion, cost, errors) from this stream is extremely fragile.
 
 **My approach:**
+
 - Use `node-pty` for raw output capture
 - Stream output to a buffer AND to WebSocket simultaneously
 - Don't try to parse in real-time — store raw, parse on-demand
@@ -284,6 +307,7 @@ Extracting structured information (task completion, cost, errors) from this stre
 ### 2. **Task Verification Reliability** — Difficulty: 8/10
 
 **Why it's hard:** Verification commands can:
+
 - Hang indefinitely (test waiting for input)
 - Consume all resources (infinite loop, memory leak)
 - Succeed but produce misleading output
@@ -291,44 +315,48 @@ Extracting structured information (task completion, cost, errors) from this stre
 - Take wildly different times (10ms to 10 minutes)
 
 **My approach:**
+
 ```typescript
 class VerificationRunner {
   async run(command: string, options: VerifyOptions): Promise<VerifyResult> {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), options.timeout || 120_000);
-    
+    const timeout = setTimeout(
+      () => controller.abort(),
+      options.timeout || 120_000
+    );
+
     try {
       const proc = exec(command, {
         cwd: options.cwd,
         signal: controller.signal,
         maxBuffer: 10 * 1024 * 1024, // 10MB
-        env: { ...process.env, ...options.env }
+        env: { ...process.env, ...options.env },
       });
-      
+
       // Capture stdout and stderr separately
-      let stdout = '';
-      let stderr = '';
-      proc.stdout?.on('data', (d) => stdout += d);
-      proc.stderr?.on('data', (d) => stderr += d);
-      
+      let stdout = "";
+      let stderr = "";
+      proc.stdout?.on("data", (d) => (stdout += d));
+      proc.stderr?.on("data", (d) => (stderr += d));
+
       const exitCode = await new Promise<number>((resolve, reject) => {
-        proc.on('close', resolve);
-        proc.on('error', reject);
+        proc.on("close", resolve);
+        proc.on("error", reject);
       });
-      
+
       clearTimeout(timeout);
-      
+
       return {
         success: exitCode === 0,
         exitCode,
         stdout: stdout.slice(-50_000), // Last 50KB
         stderr: stderr.slice(-10_000),
-        duration: Date.now() - start
+        duration: Date.now() - start,
       };
     } catch (err) {
       clearTimeout(timeout);
       if (controller.signal.aborted) {
-        return { success: false, error: 'timeout', exitCode: -1 };
+        return { success: false, error: "timeout", exitCode: -1 };
       }
       throw err;
     }
@@ -339,6 +367,7 @@ class VerificationRunner {
 ### 3. **Concurrent Session Management** — Difficulty: 7/10
 
 **Why it's hard:** Multiple agents on one machine means:
+
 - Shared filesystem (potential conflicts)
 - Shared git repo (branch collisions)
 - Shared CPU/memory (resource contention)
@@ -346,6 +375,7 @@ class VerificationRunner {
 - Process tree management (child processes of Pi)
 
 **My approach:**
+
 - One git worktree per session (enforced)
 - Resource limits via ulimit (Linux) / launchctl (macOS)
 - Session-specific environment variables
@@ -355,6 +385,7 @@ class VerificationRunner {
 ### 4. **Graceful Degradation** — Difficulty: 7/10
 
 **Why it's hard:** The bridge needs to work when:
+
 - tmux is not installed (fall back to direct process management)
 - git is not installed (skip git features, log warning)
 - Disk is nearly full (reject new sessions, warn existing)
@@ -390,6 +421,7 @@ Since I will run this server, here are my specific recommendations:
 The existing bridge-standalone.js is 400 lines and works. The PRD proposes 15+ modules. That's too much for v1.
 
 **My recommendation:** Start with a single file (< 1000 lines) that handles:
+
 - Session management (create, list, send, read, kill)
 - Task tracking (assign, update, list)
 - Verification (run command, return result)
@@ -482,24 +514,24 @@ ws://bridge:4001/ws/health                   # Health status updates
 Implementation is simple with the `ws` library:
 
 ```typescript
-import { WebSocketServer } from 'ws';
+import { WebSocketServer } from "ws";
 
 const wss = new WebSocketServer({ server });
 
-wss.on('connection', (ws, req) => {
+wss.on("connection", (ws, req) => {
   const match = req.url?.match(/\/ws\/sessions\/(.+)\/output/);
   if (match) {
     const sessionId = match[1];
     const session = sessions.get(sessionId);
     if (!session) {
-      ws.close(4004, 'Session not found');
+      ws.close(4004, "Session not found");
       return;
     }
-    
+
     // Stream output to this WebSocket
     const handler = (data: string) => ws.send(data);
-    session.on('output', handler);
-    ws.on('close', () => session.off('output', handler));
+    session.on("output", handler);
+    ws.on("close", () => session.off("output", handler));
   }
 });
 ```
@@ -551,18 +583,22 @@ Response:
 Replace `console.log` with structured JSON logs:
 
 ```typescript
-import pino from 'pino';
+import pino from "pino";
 
 const logger = pino({
-  level: process.env.LOG_LEVEL || 'info',
-  transport: process.env.NODE_ENV === 'development' 
-    ? { target: 'pino-pretty' } 
-    : undefined
+  level: process.env.LOG_LEVEL || "info",
+  transport:
+    process.env.NODE_ENV === "development"
+      ? { target: "pino-pretty" }
+      : undefined,
 });
 
 // Usage:
-logger.info({ session: 'frontend-dev', event: 'created' }, 'Session started');
-logger.error({ session: 'frontend-dev', error: err.message, stack: err.stack }, 'Session crashed');
+logger.info({ session: "frontend-dev", event: "created" }, "Session started");
+logger.error(
+  { session: "frontend-dev", error: err.message, stack: err.stack },
+  "Session crashed"
+);
 ```
 
 This makes debugging from log files actually possible.
@@ -575,7 +611,7 @@ bridge:
   port: 4001
   host: "0.0.0.0"
   maxSessions: 5
-  sessionTimeout: 1800  # 30 minutes idle timeout
+  sessionTimeout: 1800 # 30 minutes idle timeout
 
 tools:
   pi: "~/.nvm/versions/node/v24.14.0/bin/pi"
@@ -588,7 +624,7 @@ project:
   branchPrefix: "agent/"
 
 verification:
-  timeout: 120000  # 2 minutes
+  timeout: 120000 # 2 minutes
   commands:
     typecheck: "pnpm typecheck"
     lint: "pnpm lint"
@@ -613,34 +649,44 @@ The bridge should validate its environment and report problems clearly:
 ```typescript
 async function validateEnvironment(): Promise<ValidationResult> {
   const checks = [];
-  
+
   // Check required tools
   for (const [name, path] of Object.entries(config.tools)) {
-    const exists = await fs.access(path).then(() => true).catch(() => false);
+    const exists = await fs
+      .access(path)
+      .then(() => true)
+      .catch(() => false);
     checks.push({ tool: name, path, available: exists });
   }
-  
+
   // Check disk space
   const disk = await checkDiskSpace(config.storage.database);
-  checks.push({ check: 'disk', available: disk.free > 1_000_000_000 }); // 1GB minimum
-  
+  checks.push({ check: "disk", available: disk.free > 1_000_000_000 }); // 1GB minimum
+
   // Check database connectivity
   try {
-    db.pragma('journal_mode = WAL');
-    checks.push({ check: 'database', available: true });
+    db.pragma("journal_mode = WAL");
+    checks.push({ check: "database", available: true });
   } catch (e) {
-    checks.push({ check: 'database', available: false, error: e.message });
+    checks.push({ check: "database", available: false, error: e.message });
   }
-  
+
   // Check project directory
-  const projectExists = await fs.access(config.project.root).then(() => true).catch(() => false);
-  checks.push({ check: 'project', available: projectExists, path: config.project.root });
-  
-  const failures = checks.filter(c => !c.available);
+  const projectExists = await fs
+    .access(config.project.root)
+    .then(() => true)
+    .catch(() => false);
+  checks.push({
+    check: "project",
+    available: projectExists,
+    path: config.project.root,
+  });
+
+  const failures = checks.filter((c) => !c.available);
   return {
     valid: failures.length === 0,
     checks,
-    failures
+    failures,
   };
 }
 ```
@@ -652,6 +698,7 @@ async function validateEnvironment(): Promise<ValidationResult> {
 Since I'm building and running this, here's my recommended order:
 
 ### Phase 1: Core (Week 1)
+
 1. **SQLite schema and storage layer** — everything depends on this
 2. **Session management with node-pty** — create, list, send, read, kill
 3. **Basic HTTP API** — the existing routes from bridge-standalone.js, cleaned up
@@ -659,16 +706,19 @@ Since I'm building and running this, here's my recommended order:
 5. **Startup validation** — fail fast with clear errors
 
 ### Phase 2: Task System (Week 2)
+
 6. **Task state machine** — pending → assigned → in_progress → done/failed
 7. **Verification runner** — run commands, capture results, enforce timeouts
 8. **WebSocket output streaming** — real-time agent output
 
 ### Phase 3: Integration (Week 3)
+
 9. **Git operations** — branch creation, commit, status (via simple-git)
 10. **Mailbox system** — agent-to-agent messaging via SQLite
 11. **Knowledge store** — key-value with FTS search
 
 ### Phase 4: Polish (Week 4)
+
 12. **Structured logging** — pino with file rotation
 13. **Graceful shutdown** — handle SIGTERM/SIGINT properly
 14. **Resource monitoring** — disk, memory, CPU tracking
@@ -678,14 +728,14 @@ Since I'm building and running this, here's my recommended order:
 
 ## Risks and Mitigations
 
-| Risk | Impact | Probability | Mitigation |
-|------|--------|-------------|------------|
-| Pi process hangs (not crashed) | Agent stops responding | Medium | Output timeout detection, watchdog timer |
-| SQLite corruption | All state lost | Low | WAL mode, regular backups, integrity checks |
-| Disk exhaustion | Bridge fails | Medium | Disk monitoring, auto-cleanup of old sessions |
-| Agent produces malicious output | Parsing breaks | Low | Don't parse raw output; use structured result protocol |
-| Port conflicts | Bridge won't start | Low | Configurable port, startup validation |
-| tmux version differences | Inconsistent behavior | Medium | Version check on startup, or drop tmux entirely |
+| Risk                            | Impact                 | Probability | Mitigation                                             |
+| ------------------------------- | ---------------------- | ----------- | ------------------------------------------------------ |
+| Pi process hangs (not crashed)  | Agent stops responding | Medium      | Output timeout detection, watchdog timer               |
+| SQLite corruption               | All state lost         | Low         | WAL mode, regular backups, integrity checks            |
+| Disk exhaustion                 | Bridge fails           | Medium      | Disk monitoring, auto-cleanup of old sessions          |
+| Agent produces malicious output | Parsing breaks         | Low         | Don't parse raw output; use structured result protocol |
+| Port conflicts                  | Bridge won't start     | Low         | Configurable port, startup validation                  |
+| tmux version differences        | Inconsistent behavior  | Medium      | Version check on startup, or drop tmux entirely        |
 
 ---
 
@@ -708,6 +758,7 @@ Since I'm building and running this, here's my recommended order:
 The PRD is a solid foundation. The vision is right. But we're underestimating the operational complexity of running agents in production on shared hardware.
 
 **My top 3 priorities as bridge server owner:**
+
 1. **Reliability over features** — I'd rather have 3 rock-solid features than 10 fragile ones
 2. **Observability from day one** — If I can't see what's happening, I can't fix it
 3. **Simple state management** — SQLite for everything, one file, easy to backup and debug
@@ -716,4 +767,4 @@ Let's build something that works reliably first, then make it feature-rich.
 
 ---
 
-*Next step: Prototype the SQLite schema and session manager. Get two agents running on one machine. Verify we can send tasks and get results back. Everything else is details.*
+_Next step: Prototype the SQLite schema and session manager. Get two agents running on one machine. Verify we can send tasks and get results back. Everything else is details._
