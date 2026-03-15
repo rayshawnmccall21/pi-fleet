@@ -1,0 +1,12 @@
+{
+  "running": true,
+  "maxConcurrentAgents": 3,
+  "maxRetries": 2,
+  "successCriteria": [
+    "All tasks completed",
+    "No failed tasks",
+    "E2E test passes"
+  ],
+  "validationCommand": "curl -s http://localhost:3000/health",
+  "logLevel": "info"
+}
