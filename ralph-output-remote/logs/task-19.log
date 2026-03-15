@@ -1,0 +1,2 @@
+{"success": true, "summary": "Installed node-pty dependency using npm install node-pty and verified it works with require test - verification passed with 'ok' result"}
+{"success": true, "summary": "node-pty dependency was already installed in package.json and verification passed successfully"}

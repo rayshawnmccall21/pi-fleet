@@ -2,8 +2,8 @@
   "prd": "PRD",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 709,
-  "completedTasks": 0,
-  "failedTasks": 0,
+  "completedTasks": 15,
+  "failedTasks": 4,
   "tasks": [
     {
       "id": 1,
@@ -13,8 +13,12 @@
       "verification": "ls -la ~/remote-mcp-server/src",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T21:59:50.897Z",
+      "agentId": "72195",
+      "completedAt": "2026-03-15T22:00:13.889Z",
+      "verifiedAt": "2026-03-15T22:00:14.402Z"
     },
     {
       "id": 2,
@@ -24,8 +28,12 @@
       "verification": "cat ~/remote-mcp-server/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).name\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:00:15.445Z",
+      "agentId": "74867",
+      "completedAt": "2026-03-15T22:00:38.623Z",
+      "verifiedAt": "2026-03-15T22:00:39.159Z"
     },
     {
       "id": 3,
@@ -35,8 +43,12 @@
       "verification": "cd ~/remote-mcp-server && npx tsc --version",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:00:40.190Z",
+      "agentId": "77696",
+      "completedAt": "2026-03-15T22:01:10.430Z",
+      "verifiedAt": "2026-03-15T22:01:11.646Z"
     },
     {
       "id": 4,
@@ -46,8 +58,12 @@
       "verification": "cd ~/remote-mcp-server && npx eslint --print-config src/index.ts 2>/dev/null | head -5",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:01:12.682Z",
+      "agentId": "81236",
+      "completedAt": "2026-03-15T22:02:58.615Z",
+      "verifiedAt": "2026-03-15T22:03:01.388Z"
     },
     {
       "id": 5,
@@ -57,8 +73,12 @@
       "verification": "cd ~/remote-mcp-server && npx prettier --version",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:03:02.421Z",
+      "agentId": "94096",
+      "completedAt": "2026-03-15T22:03:55.800Z",
+      "verifiedAt": "2026-03-15T22:03:57.140Z"
     },
     {
       "id": 6,
@@ -68,8 +88,12 @@
       "verification": "cat ~/remote-mcp-server/.gitignore | grep -c \"node_modules\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:03:58.184Z",
+      "agentId": "99968",
+      "completedAt": "2026-03-15T22:04:21.562Z",
+      "verifiedAt": "2026-03-15T22:04:21.990Z"
     },
     {
       "id": 7,
@@ -79,8 +103,12 @@
       "verification": "cd ~/remote-mcp-server && git status --short",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:04:23.032Z",
+      "agentId": "3583",
+      "completedAt": "2026-03-15T22:04:41.620Z",
+      "verifiedAt": "2026-03-15T22:04:42.358Z"
     },
     {
       "id": 8,
@@ -90,8 +118,12 @@
       "verification": "head -5 ~/remote-mcp-server/README.md | grep -i \"mcp\\|server\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:15:11.552Z",
+      "agentId": "72003",
+      "completedAt": "2026-03-15T22:15:35.645Z",
+      "verifiedAt": "2026-03-15T22:15:36.204Z"
     },
     {
       "id": 9,
@@ -101,8 +133,12 @@
       "verification": "cat ~/remote-mcp-server/.env.example | grep -c \"=\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:15:37.234Z",
+      "agentId": "75624",
+      "completedAt": "2026-03-15T22:15:56.239Z",
+      "verifiedAt": "2026-03-15T22:15:56.707Z"
     },
     {
       "id": 10,
@@ -112,8 +148,12 @@
       "verification": "cat ~/remote-mcp-server/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).scripts.build\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:15:57.744Z",
+      "agentId": "78358",
+      "completedAt": "2026-03-15T22:17:14.012Z",
+      "verifiedAt": "2026-03-15T22:17:14.493Z"
     },
     {
       "id": 11,
@@ -123,8 +163,12 @@
       "verification": "ls ~/remote-mcp-server/pnpm-workspace.yaml 2>/dev/null || echo \"single project\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:17:15.532Z",
+      "agentId": "86747",
+      "completedAt": "2026-03-15T22:17:47.418Z",
+      "verifiedAt": "2026-03-15T22:17:47.955Z"
     },
     {
       "id": 12,
@@ -134,8 +178,12 @@
       "verification": "head -3 ~/remote-mcp-server/CONTRIBUTING.md",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:17:48.987Z",
+      "agentId": "90894",
+      "completedAt": "2026-03-15T22:18:44.270Z",
+      "verifiedAt": "2026-03-15T22:18:44.754Z"
     },
     {
       "id": 13,
@@ -145,8 +193,12 @@
       "verification": "ls ~/remote-mcp-server/.husky 2>/dev/null || echo \"optional\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:18:45.783Z",
+      "agentId": "97473",
+      "completedAt": "2026-03-15T22:19:52.083Z",
+      "verifiedAt": "2026-03-15T22:19:52.549Z"
     },
     {
       "id": 14,
@@ -156,8 +208,12 @@
       "verification": "cat ~/remote-mcp-server/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).lintStaged || 'none'\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:31:12.296Z",
+      "agentId": "75353",
+      "completedAt": "2026-03-15T22:32:15.157Z",
+      "verifiedAt": "2026-03-15T22:32:15.985Z"
     },
     {
       "id": 15,
@@ -167,8 +223,12 @@
       "verification": "ls ~/remote-mcp-server/.vscode/settings.json 2>/dev/null || echo \"optional\"",
       "expectedResult": "",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:32:17.022Z",
+      "agentId": "82653",
+      "completedAt": "2026-03-15T22:32:45.450Z",
+      "verifiedAt": "2026-03-15T22:32:45.899Z"
     },
     {
       "id": 16,
@@ -181,7 +241,11 @@
         1
       ],
       "completed": false,
-      "failed": false
+      "failed": true,
+      "startedAt": "2026-03-15T22:32:46.933Z",
+      "agentId": "86068",
+      "completedAt": "2026-03-15T22:34:19.973Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"\""
     },
     {
       "id": 17,
@@ -194,7 +258,11 @@
         1
       ],
       "completed": false,
-      "failed": false
+      "failed": true,
+      "startedAt": "2026-03-15T22:37:43.390Z",
+      "agentId": "18865",
+      "completedAt": "2026-03-15T22:39:16.868Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"\""
     },
     {
       "id": 18,
@@ -207,7 +275,11 @@
         1
       ],
       "completed": false,
-      "failed": false
+      "failed": true,
+      "startedAt": "2026-03-15T22:40:47.003Z",
+      "agentId": "37404",
+      "completedAt": "2026-03-15T22:41:28.416Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"[eval]:1\nrequire(sharp)\n        ^\n\nReferenceError: sharp is not defined\n    at [eval]:1:9\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at [\""
     },
     {
       "id": 19,
@@ -220,7 +292,11 @@
         1
       ],
       "completed": false,
-      "failed": false
+      "failed": true,
+      "startedAt": "2026-03-15T22:41:58.598Z",
+      "agentId": "45455",
+      "completedAt": "2026-03-15T22:42:20.171Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"[eval]:1\nrequire(node-pty)\n        ^\n\nReferenceError: node is not defined\n    at [eval]:1:9\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at\""
     },
     {
       "id": 20,
@@ -233,7 +309,8 @@
         1
       ],
       "completed": false,
-      "failed": false
+      "failed": false,
+      "startedAt": "2026-03-15T22:42:50.853Z"
     },
     {
       "id": 21,
