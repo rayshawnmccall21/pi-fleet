@@ -1,0 +1,1 @@
+{"success": true, "summary": "Created ~/remote-mcp-server project directory structure including src/tools, src/docs, src/memory, src/self-update and matching tests subdirectories. Verification passed: ls -la ~/remote-mcp-server/src showed the expected src directory with subdirectories."}
