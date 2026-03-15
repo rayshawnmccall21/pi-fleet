@@ -241,7 +241,7 @@ devices:
   - name: orchestrator
     host: mac-414.local
     role: control-plane
-    
+
   - name: worker-1
     host: autumnrays-mbp.local
     role: worker
@@ -252,14 +252,14 @@ devices:
 project:
   name: my-project
   root: ~/my-project
-  
+
   # Verification gates
   verify:
     typecheck: "pnpm typecheck"
     lint: "pnpm lint"
     test: "pnpm test"
     build: "pnpm build"
-  
+
   # Git workflow
   git:
     default_branch: main
@@ -280,7 +280,7 @@ teams:
       - name: code-reviewer
         count: 1
         model: claude-sonnet-4-20250514
-        
+
   rapid:
     roles:
       - name: developer
@@ -305,6 +305,7 @@ knowledge:
 **So that** I can deploy agent teams to available hardware.
 
 **Acceptance Criteria:**
+
 - mDNS discovery finds devices running pi-fleet bridge on LAN
 - Manual device registration via config file
 - SSH key-based authentication between devices
@@ -318,6 +319,7 @@ knowledge:
 **So that** I can manage a pool of workers.
 
 **Acceptance Criteria:**
+
 - Spawn Pi agents in tmux sessions with configurable model, prompt, and working directory
 - List all active sessions with metadata (role, project, idle time)
 - Send messages to agents and read their terminal output
@@ -332,6 +334,7 @@ knowledge:
 **So that** I can manage work across multiple agents.
 
 **Acceptance Criteria:**
+
 - States: `pending` → `assigned` → `in_progress` → `review` → `verified` → `done` (or `failed`)
 - Task assignment with title, description, verification command, and branch
 - Priority levels: critical, high, normal, low
@@ -346,6 +349,7 @@ knowledge:
 **So that** I don't rely on agent self-reporting.
 
 **Acceptance Criteria:**
+
 - Run arbitrary shell commands as verification (lint, test, typecheck, build)
 - Configurable verification presets per project
 - Timeout handling for long-running verifications
@@ -360,6 +364,7 @@ knowledge:
 **So that** multiple agents can work in parallel without conflicts.
 
 **Acceptance Criteria:**
+
 - Auto-create feature branches per task or per agent
 - Git worktree support for true parallel branch work
 - Commit with structured messages
@@ -375,6 +380,7 @@ knowledge:
 **So that** the team accumulates collective intelligence.
 
 **Acceptance Criteria:**
+
 - Key-value store with tags and full-text search
 - Any agent can write knowledge entries
 - Knowledge persists across sessions
@@ -390,6 +396,7 @@ knowledge:
 **So that** agents can coordinate without human intermediation.
 
 **Acceptance Criteria:**
+
 - Per-agent mailbox (queue)
 - Message types: task, query, response, notification, broadcast
 - Message routing by session name
@@ -404,6 +411,7 @@ knowledge:
 **So that** I can configure, monitor, and control everything.
 
 **Acceptance Criteria:**
+
 - `pi-fleet init` — Initialize in a project
 - `pi-fleet device add/remove/list` — Manage devices
 - `pi-fleet team spawn/status/kill` — Manage agent teams
@@ -420,6 +428,7 @@ knowledge:
 **So that** I can understand what's happening and debug issues.
 
 **Acceptance Criteria:**
+
 - Real-time terminal dashboard showing all agents and their status
 - Per-agent output streaming
 - Task progress tracking with ETA
@@ -435,6 +444,7 @@ knowledge:
 **So that** I can get started quickly without StylePass-specific setup.
 
 **Acceptance Criteria:**
+
 - Single `pi-fleet.yaml` config file
 - Sensible defaults for common setups
 - Environment variable overrides
@@ -448,22 +458,22 @@ knowledge:
 
 ### Tech Stack
 
-| Component | Technology |
-|-----------|-----------|
-| Runtime | Node.js 20+ (ESM) |
-| Language | TypeScript 5.x (strict mode) |
-| Package Manager | pnpm with workspaces |
-| Build | tsup or tsc |
-| Test Framework | Vitest |
-| HTTP Server | Express 4.x (not 5 — too many breaking changes) |
-| WebSocket | ws |
-| Schema Validation | Zod |
-| CLI Framework | Commander.js |
-| Terminal UI | Ink or blessed |
-| Git Operations | simple-git |
-| Process Management | tmux via child_process |
-| Discovery | mdns / bonjour-service |
-| CI/CD | GitHub Actions |
+| Component          | Technology                                      |
+| ------------------ | ----------------------------------------------- |
+| Runtime            | Node.js 20+ (ESM)                               |
+| Language           | TypeScript 5.x (strict mode)                    |
+| Package Manager    | pnpm with workspaces                            |
+| Build              | tsup or tsc                                     |
+| Test Framework     | Vitest                                          |
+| HTTP Server        | Express 4.x (not 5 — too many breaking changes) |
+| WebSocket          | ws                                              |
+| Schema Validation  | Zod                                             |
+| CLI Framework      | Commander.js                                    |
+| Terminal UI        | Ink or blessed                                  |
+| Git Operations     | simple-git                                      |
+| Process Management | tmux via child_process                          |
+| Discovery          | mdns / bonjour-service                          |
+| CI/CD              | GitHub Actions                                  |
 
 ### Monorepo Structure
 
@@ -517,12 +527,12 @@ interface ApiResponse<T> {
 
 ### Testing Strategy
 
-| Level | Tool | Coverage Target |
-|-------|------|----------------|
-| Unit | Vitest | 80%+ per module |
-| Integration | Vitest + supertest | All API endpoints |
-| E2E | Custom harness | Spawn → Task → Verify → Result cycle |
-| Contract | Zod schemas | 100% message types |
+| Level       | Tool               | Coverage Target                      |
+| ----------- | ------------------ | ------------------------------------ |
+| Unit        | Vitest             | 80%+ per module                      |
+| Integration | Vitest + supertest | All API endpoints                    |
+| E2E         | Custom harness     | Spawn → Task → Verify → Result cycle |
+| Contract    | Zod schemas        | 100% message types                   |
 
 ### Security
 
@@ -538,6 +548,7 @@ interface ApiResponse<T> {
 ## Implementation Phases
 
 ### Phase 1: Foundation (Tasks 1-50)
+
 - Monorepo setup with pnpm workspaces
 - TypeScript configuration
 - Vitest setup
@@ -546,6 +557,7 @@ interface ApiResponse<T> {
 - Basic HTTP transport
 
 ### Phase 2: Bridge Server (Tasks 51-100)
+
 - Express server with middleware
 - Session manager (tmux integration)
 - Session communicator (send/read)
@@ -554,6 +566,7 @@ interface ApiResponse<T> {
 - Verification runner
 
 ### Phase 3: Fleet Protocol (Tasks 101-130)
+
 - WebSocket transport
 - Device discovery (mDNS + manual)
 - Authentication (JWT + SSH keys)
@@ -561,6 +574,7 @@ interface ApiResponse<T> {
 - Connection health monitoring
 
 ### Phase 4: Fleet Manager (Tasks 131-170)
+
 - Orchestrator loop
 - Task planner and assigner
 - Team composer
@@ -569,6 +583,7 @@ interface ApiResponse<T> {
 - Knowledge store with search
 
 ### Phase 5: CLI & Polish (Tasks 171-200+)
+
 - CLI commands
 - Terminal dashboard
 - Documentation
@@ -581,16 +596,16 @@ interface ApiResponse<T> {
 
 ## Success Metrics
 
-| Metric | Target |
-|--------|--------|
-| Agent spawn time | < 5 seconds |
-| Message delivery latency | < 500ms |
-| Task verification time | < 2 minutes |
-| Bridge API response time | < 200ms |
-| Session crash recovery | < 10 seconds |
-| Knowledge query time | < 100ms |
-| Zero-config startup | Under 2 minutes |
-| Test coverage | 80%+ |
+| Metric                   | Target          |
+| ------------------------ | --------------- |
+| Agent spawn time         | < 5 seconds     |
+| Message delivery latency | < 500ms         |
+| Task verification time   | < 2 minutes     |
+| Bridge API response time | < 200ms         |
+| Session crash recovery   | < 10 seconds    |
+| Knowledge query time     | < 100ms         |
+| Zero-config startup      | Under 2 minutes |
+| Test coverage            | 80%+            |
 
 ---
 

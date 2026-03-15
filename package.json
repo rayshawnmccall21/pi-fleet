@@ -8,12 +8,22 @@
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "dev": "pnpm -r dev"
+    "dev": "pnpm -r dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
-  "keywords": ["ai-agents", "orchestration", "multi-device", "pi-agent"],
+  "keywords": [
+    "ai-agents",
+    "orchestration",
+    "multi-device",
+    "pi-agent"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }

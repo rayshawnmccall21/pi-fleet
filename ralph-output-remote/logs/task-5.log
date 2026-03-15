@@ -1,0 +1,1 @@
+{"success": true, "summary": "Prettier was already set up in ~/pi-fleet with devDependency \"prettier\": \"^3.8.1\", scripts \"format\" and \"format:check\" in package.json, plus .prettierrc.json and .prettierignore. Verification passed: `cd ~/pi-fleet && npx prettier --version` returned `3.8.1`."}

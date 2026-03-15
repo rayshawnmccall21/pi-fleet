@@ -1,0 +1,4 @@
+{"success": true, "summary": "Verified ~/pi-fleet/package.json already contains name, version, and description. Required verification command passed with output: pi-fleet"}
+{"success": true, "summary": "Verified ~/pi-fleet/package.json already contains initialized name, version, and description fields. Ran required verification command successfully; output was pi-fleet."}
+{"success": true, "summary": "Verified ~/pi-fleet/package.json is initialized with name, version, and description. Verification command passed and returned name: pi-fleet."}
+{"success": true, "summary": "Verified ~/pi-fleet/package.json already contains initialized name, version, and description fields. Verification passed: cat ~/pi-fleet/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).name\" returned pi-fleet"}
