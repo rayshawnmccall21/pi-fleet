@@ -1,0 +1,2 @@
+{"success": true, "summary": "Verified ~/remote-mcp-server/package.json is initialized with name, version, and description. Verification command passed and returned name: remote-mcp-server"}
+{"success": true, "summary": "Confirmed ~/remote-mcp-server/package.json is initialized with name, version, and description. Verification passed: cat ~/remote-mcp-server/package.json | node -p \"JSON.parse(require('fs').readFileSync('/dev/stdin','utf8')).name\" returned remote-mcp-server"}
