@@ -1,0 +1,1 @@
+{"success": true, "summary": "Implemented update channel management in ~/remote-mcp-server/src/self-update/updater.ts for stable/beta/dev release selection and rollback filtering, added channel-aware tests in tests/self-update/updater.test.ts, and verified functionality with npm test, npm run lint, npm run typecheck, npm run build, plus required file check: exists"}
