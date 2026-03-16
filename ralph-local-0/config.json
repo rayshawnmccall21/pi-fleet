@@ -1,0 +1,6 @@
+{
+  "prd": "Pi Fleet Worker 2",
+  "maxConcurrent": 3,
+  "logLevel": "info",
+  "running": false
+}
