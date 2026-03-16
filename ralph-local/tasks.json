@@ -2,7 +2,7 @@
   "prd": "Pi Fleet Local",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 348,
-  "completedTasks": 12,
+  "completedTasks": 15,
   "failedTasks": 0,
   "tasks": [
     {
@@ -683,8 +683,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T01:43:44.392Z",
+      "completedAt": "2026-03-16T01:47:23.485Z",
+      "verifiedAt": "2026-03-16T01:47:23.512Z"
     },
     {
       "id": 398,
@@ -694,8 +697,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T01:47:31.617Z",
+      "completedAt": "2026-03-16T01:51:34.497Z",
+      "verifiedAt": "2026-03-16T01:51:34.509Z"
     },
     {
       "id": 399,
@@ -705,8 +711,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T01:51:39.060Z",
+      "completedAt": "2026-03-16T01:53:42.160Z",
+      "verifiedAt": "2026-03-16T01:53:42.178Z"
     },
     {
       "id": 400,
