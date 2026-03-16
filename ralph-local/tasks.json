@@ -2,7 +2,7 @@
   "prd": "Pi Fleet Local",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 348,
-  "completedTasks": 33,
+  "completedTasks": 38,
   "failedTasks": 0,
   "tasks": [
     {
@@ -977,8 +977,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T02:45:11.079Z",
+      "completedAt": "2026-03-16T02:51:34.775Z",
+      "verifiedAt": "2026-03-16T02:51:34.808Z"
     },
     {
       "id": 419,
@@ -988,8 +991,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T02:51:42.523Z",
+      "completedAt": "2026-03-16T02:52:49.875Z",
+      "verifiedAt": "2026-03-16T02:52:49.887Z"
     },
     {
       "id": 420,
@@ -999,8 +1005,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T02:52:54.410Z",
+      "completedAt": "2026-03-16T02:57:32.624Z",
+      "verifiedAt": "2026-03-16T02:57:32.635Z"
     },
     {
       "id": 270,
@@ -1595,8 +1604,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T02:57:37.116Z",
+      "completedAt": "2026-03-16T03:00:00.194Z",
+      "verifiedAt": "2026-03-16T03:00:00.209Z"
     },
     {
       "id": 507,
@@ -1606,8 +1618,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T03:00:04.828Z",
+      "completedAt": "2026-03-16T03:01:04.650Z",
+      "verifiedAt": "2026-03-16T03:01:04.677Z"
     },
     {
       "id": 508,
