@@ -1,0 +1,1 @@
+{"success": true, "summary": "Confirmed secret rotation is already implemented in ~/remote-mcp-server/src/tools/secrets.ts via createSecretsRotateTool with validation, encrypted-store updates, allowCreate handling, and audit metadata. Verified required check by running `cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"`, which returned `exists`."}
