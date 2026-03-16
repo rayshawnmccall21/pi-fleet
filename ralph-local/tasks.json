@@ -2,7 +2,7 @@
   "prd": "Pi Fleet Local",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 348,
-  "completedTasks": 17,
+  "completedTasks": 18,
   "failedTasks": 0,
   "tasks": [
     {
@@ -753,8 +753,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/self-update/updater.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T01:57:20.799Z",
+      "completedAt": "2026-03-16T01:59:59.256Z",
+      "verifiedAt": "2026-03-16T01:59:59.270Z"
     },
     {
       "id": 403,
