@@ -1,0 +1,6 @@
+{
+  "prd": "Pi Fleet Local",
+  "maxConcurrent": 3,
+  "logLevel": "info",
+  "running": true
+}

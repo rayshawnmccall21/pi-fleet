@@ -1,0 +1,2500 @@
+{
+  "prd": "Pi Fleet Worker 3",
+  "createdAt": "2026-03-15T21:11:00.596Z",
+  "totalTasks": 180,
+  "completedTasks": 0,
+  "failedTasks": 0,
+  "tasks": [
+    {
+      "id": 295,
+      "category": "git-tools",
+      "description": "Create git.status tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 296,
+      "category": "git-tools",
+      "description": "Implement git status parsing",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 297,
+      "category": "git-tools",
+      "description": "Create git.log tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 298,
+      "category": "git-tools",
+      "description": "Implement git log with formatting",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 299,
+      "category": "git-tools",
+      "description": "Create git.diff tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 300,
+      "category": "git-tools",
+      "description": "Implement diff output parsing",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 301,
+      "category": "git-tools",
+      "description": "Create git.commit tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 302,
+      "category": "git-tools",
+      "description": "Implement commit with message",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 303,
+      "category": "git-tools",
+      "description": "Create git.push tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 304,
+      "category": "git-tools",
+      "description": "Implement push with branch tracking",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 305,
+      "category": "git-tools",
+      "description": "Create git.pull tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 306,
+      "category": "git-tools",
+      "description": "Implement pull with rebase option",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 307,
+      "category": "git-tools",
+      "description": "Create git.branch tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 308,
+      "category": "git-tools",
+      "description": "Implement branch CRUD operations",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 309,
+      "category": "git-tools",
+      "description": "Create git.checkout tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 310,
+      "category": "git-tools",
+      "description": "Implement branch switching",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 311,
+      "category": "git-tools",
+      "description": "Create git.stash tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 312,
+      "category": "git-tools",
+      "description": "Implement stash operations",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 313,
+      "category": "git-tools",
+      "description": "Create git.pr tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 314,
+      "category": "git-tools",
+      "description": "Implement PR creation via gh CLI",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 315,
+      "category": "git-tools",
+      "description": "Create git.prList tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 316,
+      "category": "git-tools",
+      "description": "Implement PR listing",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 317,
+      "category": "git-tools",
+      "description": "Create git.prReview tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 318,
+      "category": "git-tools",
+      "description": "Implement PR review submission",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 319,
+      "category": "git-tools",
+      "description": "Create npm.run tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 320,
+      "category": "git-tools",
+      "description": "Implement npm script execution",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 321,
+      "category": "git-tools",
+      "description": "Create npm.install tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 322,
+      "category": "git-tools",
+      "description": "Implement dependency installation",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 323,
+      "category": "git-tools",
+      "description": "Create npm.test tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 324,
+      "category": "git-tools",
+      "description": "Implement test runner invocation",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 325,
+      "category": "git-tools",
+      "description": "Create npm.build tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 326,
+      "category": "git-tools",
+      "description": "Implement build execution",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 327,
+      "category": "git-tools",
+      "description": "Create npm.lint tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 328,
+      "category": "git-tools",
+      "description": "Implement linter execution",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 329,
+      "category": "git-tools",
+      "description": "Create docker.ps tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 330,
+      "category": "git-tools",
+      "description": "Implement container listing",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 331,
+      "category": "git-tools",
+      "description": "Create docker.logs tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 332,
+      "category": "git-tools",
+      "description": "Implement container log retrieval",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 333,
+      "category": "git-tools",
+      "description": "Create docker.exec tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 334,
+      "category": "git-tools",
+      "description": "Implement command execution in container",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 335,
+      "category": "git-tools",
+      "description": "Create docker.compose tool",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 336,
+      "category": "git-tools",
+      "description": "Implement compose operations",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 337,
+      "category": "git-tools",
+      "description": "Create git tools comprehensive test suite",
+      "context": "3. Track tasks, verify work, and manage git workflows across devices\n4. Maintain persistent agent presence that survives session disconnects\n5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/git.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 338,
+      "category": "database-tools",
+      "description": "Create db.query tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 339,
+      "category": "database-tools",
+      "description": "Implement SQL query execution with params",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 340,
+      "category": "database-tools",
+      "description": "Create db.tables tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 341,
+      "category": "database-tools",
+      "description": "Implement table listing",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 342,
+      "category": "database-tools",
+      "description": "Create db.schema tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 343,
+      "category": "database-tools",
+      "description": "Implement schema introspection",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 344,
+      "category": "database-tools",
+      "description": "Create db.count tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 345,
+      "category": "database-tools",
+      "description": "Implement row counting with filters",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 346,
+      "category": "database-tools",
+      "description": "Create db.insert tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 347,
+      "category": "database-tools",
+      "description": "Implement row insertion",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 348,
+      "category": "database-tools",
+      "description": "Create db.update tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 349,
+      "category": "database-tools",
+      "description": "Implement row updates",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 350,
+      "category": "database-tools",
+      "description": "Create db.delete tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 351,
+      "category": "database-tools",
+      "description": "Implement row deletion",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 352,
+      "category": "database-tools",
+      "description": "Create db.migrate tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 353,
+      "category": "database-tools",
+      "description": "Implement migration execution",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 354,
+      "category": "database-tools",
+      "description": "Create db.seed tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 355,
+      "category": "database-tools",
+      "description": "Implement seed file execution",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 356,
+      "category": "database-tools",
+      "description": "Create db.backup tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 357,
+      "category": "database-tools",
+      "description": "Implement database backup",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 358,
+      "category": "database-tools",
+      "description": "Create db.restore tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 359,
+      "category": "database-tools",
+      "description": "Implement database restore",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 360,
+      "category": "database-tools",
+      "description": "Create db.explain tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 361,
+      "category": "database-tools",
+      "description": "Implement query plan analysis",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 362,
+      "category": "database-tools",
+      "description": "Create db.stats tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 363,
+      "category": "database-tools",
+      "description": "Implement database statistics",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 364,
+      "category": "database-tools",
+      "description": "Create db.connections tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 365,
+      "category": "database-tools",
+      "description": "Implement connection monitoring",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 366,
+      "category": "database-tools",
+      "description": "Create db.slowQueries tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 367,
+      "category": "database-tools",
+      "description": "Implement slow query detection",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 368,
+      "category": "database-tools",
+      "description": "Add SQL injection prevention",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 369,
+      "category": "database-tools",
+      "description": "Create database tools comprehensive test suite",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/database.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 421,
+      "category": "self-documentation",
+      "description": "Create docs.capabilities tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 422,
+      "category": "self-documentation",
+      "description": "Implement capability listing with categories",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 423,
+      "category": "self-documentation",
+      "description": "Create docs.tool tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 424,
+      "category": "self-documentation",
+      "description": "Implement single tool documentation",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 425,
+      "category": "self-documentation",
+      "description": "Create docs.search tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 426,
+      "category": "self-documentation",
+      "description": "Implement documentation search engine",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 427,
+      "category": "self-documentation",
+      "description": "Create docs.examples tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 428,
+      "category": "self-documentation",
+      "description": "Implement usage example retrieval",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 429,
+      "category": "self-documentation",
+      "description": "Create docs.errors tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 430,
+      "category": "self-documentation",
+      "description": "Implement error code documentation",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 431,
+      "category": "self-documentation",
+      "description": "Create docs.bestPractices tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 432,
+      "category": "self-documentation",
+      "description": "Implement best practices guide",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 433,
+      "category": "self-documentation",
+      "description": "Create docs.changelog tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 434,
+      "category": "self-documentation",
+      "description": "Implement changelog access",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 435,
+      "category": "self-documentation",
+      "description": "Create docs.feedback tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 436,
+      "category": "self-documentation",
+      "description": "Implement feedback collection",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 437,
+      "category": "self-documentation",
+      "description": "Create docs.learn tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 438,
+      "category": "self-documentation",
+      "description": "Implement pattern learning from usage",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 439,
+      "category": "self-documentation",
+      "description": "Create docs.recommend tool",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 440,
+      "category": "self-documentation",
+      "description": "Implement tool recommendations based on context",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 441,
+      "category": "self-documentation",
+      "description": "Create capabilities.json generator",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 442,
+      "category": "self-documentation",
+      "description": "Implement auto-documentation from code",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 443,
+      "category": "self-documentation",
+      "description": "Create documentation search index",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 444,
+      "category": "self-documentation",
+      "description": "Create self-documentation comprehensive test suite",
+      "context": "**So that** I don't rely on agent self-reporting.\n\n**Acceptance Criteria:**\n- Run arbitrary shell commands as verification (lint, test, typecheck, build)\n- Configurable verification presets per project\n- Timeout handling for long-running verifications\n- Structured pass/fail results with output capture\n- Gate progression: tasks can't move to `verified` without passing verification\n- Parallel verification support\n\n### F5: Git Workflow Manager",
+      "verification": "cd ~/remote-mcp-server && test -f src/docs/indexer.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 104,
+      "category": "agent-tools",
+      "description": "Create agent.spawn tool - spawn Pi agent with task",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 105,
+      "category": "agent-tools",
+      "description": "Implement agent.spawn handler with prompt injection",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 106,
+      "category": "agent-tools",
+      "description": "Create agent.chat tool - send message to agent",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 107,
+      "category": "agent-tools",
+      "description": "Implement agent.chat handler with response parsing",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 108,
+      "category": "agent-tools",
+      "description": "Create agent.stream tool - stream agent output",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 109,
+      "category": "agent-tools",
+      "description": "Implement agent.stream with WebSocket streaming",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 110,
+      "category": "agent-tools",
+      "description": "Create agent.status tool - get agent status",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 111,
+      "category": "agent-tools",
+      "description": "Implement agent.status with process monitoring",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 112,
+      "category": "agent-tools",
+      "description": "Create agent.kill tool - terminate agent",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 113,
+      "category": "agent-tools",
+      "description": "Implement agent.kill with cleanup",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 114,
+      "category": "agent-tools",
+      "description": "Create agent.list tool - list running agents",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 115,
+      "category": "agent-tools",
+      "description": "Implement agent.list with filtering",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 116,
+      "category": "agent-tools",
+      "description": "Create agent.logs tool - get agent output logs",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 117,
+      "category": "agent-tools",
+      "description": "Implement agent.logs with tail support",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 118,
+      "category": "agent-tools",
+      "description": "Create agent.restart tool - restart failed agent",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 119,
+      "category": "agent-tools",
+      "description": "Implement agent.restart preserving context",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 120,
+      "category": "agent-tools",
+      "description": "Add agent output streaming to WebSocket",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 121,
+      "category": "agent-tools",
+      "description": "Implement agent timeout handling (30min default)",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 122,
+      "category": "agent-tools",
+      "description": "Add agent resource limits (CPU, memory)",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 123,
+      "category": "agent-tools",
+      "description": "Implement agent cleanup on disconnect",
+      "context": "# Pi Fleet \u2014 Multi-Device Agent Orchestration Platform\n\n## Product Requirements Document v1.0\n\n---\n\n## Vision\n\nPi Fleet is an open-source infrastructure that enables teams of AI agents (Pi agents) running across multiple physical devices to collaborate, coordinate, and build software together \u2014 controlled by an orchestrator agent on a separate machine. It is device-agnostic, company-agnostic, and designed for any team that wants to run autonomous AI development workflows across distributed hardw",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/agent.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 558,
+      "category": "media-tools",
+      "description": "Create image.resize tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 559,
+      "category": "media-tools",
+      "description": "Implement image resizing via sharp",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 560,
+      "category": "media-tools",
+      "description": "Create image.crop tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 561,
+      "category": "media-tools",
+      "description": "Implement image cropping",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 562,
+      "category": "media-tools",
+      "description": "Create image.convert tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 563,
+      "category": "media-tools",
+      "description": "Implement format conversion",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 564,
+      "category": "media-tools",
+      "description": "Create image.compare tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 565,
+      "category": "media-tools",
+      "description": "Implement image diffing",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 566,
+      "category": "media-tools",
+      "description": "Create image.annotate tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 567,
+      "category": "media-tools",
+      "description": "Implement text overlay on images",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 568,
+      "category": "media-tools",
+      "description": "Create image.detect tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 569,
+      "category": "media-tools",
+      "description": "Implement object/face detection",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 570,
+      "category": "media-tools",
+      "description": "Create video.trim tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 571,
+      "category": "media-tools",
+      "description": "Implement video trimming via ffmpeg",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 572,
+      "category": "media-tools",
+      "description": "Create video.compress tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 573,
+      "category": "media-tools",
+      "description": "Implement video compression",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 574,
+      "category": "media-tools",
+      "description": "Create video.extractFrames tool",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 575,
+      "category": "media-tools",
+      "description": "Implement frame extraction",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 576,
+      "category": "media-tools",
+      "description": "Create media tools comprehensive test suite",
+      "context": "5. Enable agent-to-agent communication without human intermediation\n\n## Target Users\n\n- **Solo developers** with multiple machines who want AI agents working in parallel\n- **Teams** who want to deploy AI agents across development hardware\n- **Companies** building AI-first development workflows\n- **Open-source projects** wanting distributed AI contributions\n\n## Core Principles\n",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/media.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1,
+        44
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 59,
+      "category": "websocket-transport",
+      "description": "Create WebSocket transport class",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 60,
+      "category": "websocket-transport",
+      "description": "Implement WebSocket server binding on port 3000",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 61,
+      "category": "websocket-transport",
+      "description": "Add connection handling with client tracking",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 62,
+      "category": "websocket-transport",
+      "description": "Implement JSON-RPC message parsing",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 63,
+      "category": "websocket-transport",
+      "description": "Add message serialization",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 64,
+      "category": "websocket-transport",
+      "description": "Implement heartbeat mechanism (30s interval)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 65,
+      "category": "websocket-transport",
+      "description": "Add connection state management",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 66,
+      "category": "websocket-transport",
+      "description": "Implement automatic reconnection support",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 67,
+      "category": "websocket-transport",
+      "description": "Add connection authentication via shared secret",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 68,
+      "category": "websocket-transport",
+      "description": "Implement message queuing for offline clients",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 69,
+      "category": "websocket-transport",
+      "description": "Add binary message support for screenshots",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 70,
+      "category": "websocket-transport",
+      "description": "Implement connection limits (max 10 clients)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 71,
+      "category": "websocket-transport",
+      "description": "Add connection monitoring and logging",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 72,
+      "category": "websocket-transport",
+      "description": "Implement graceful disconnection",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 73,
+      "category": "websocket-transport",
+      "description": "Add transport error handling and recovery",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 websocket.ts    # WebSocket transport for real-time\n\u2502   \u2502   \u2514\u2500\u2500 ssh.ts          # SSH tunnel transport\n\u2502   \u251c\u2500\u2500 discovery/          # Device discovery\n\u2502   \u2502   \u251c\u2500\u2500 mdns.ts         # mDNS/Bonjour for LAN discovery\n\u2502   \u2502   \u251c\u2500\u2500 manual.ts       # Manual device registration\n\u2502   \u2502   \u2514\u2500\u2500 registry.ts     # Device registry\n\u2502   \u2514\u2500\u2500 auth/               # Authentication\n\u2502       \u251c\u2500\u2500 token.ts        # JWT token management\n\u2502       \u2514\u2500\u2500 keypair.ts      # SSH key-based auth\n\u251c\u2500\u2500 __tests__/\n\u2502   \u251c\u2500\u2500 messag",
+      "verification": "cd ~/remote-mcp-server && test -f src/transport.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 470,
+      "category": "notifications",
+      "description": "Create notify.send tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 471,
+      "category": "notifications",
+      "description": "Implement macOS notification sending",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 472,
+      "category": "notifications",
+      "description": "Create notify.on tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 473,
+      "category": "notifications",
+      "description": "Implement event subscription",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 474,
+      "category": "notifications",
+      "description": "Create notify.off tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 475,
+      "category": "notifications",
+      "description": "Implement event unsubscription",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 476,
+      "category": "notifications",
+      "description": "Create notify.alert tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 477,
+      "category": "notifications",
+      "description": "Implement condition-based alerts",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 478,
+      "category": "notifications",
+      "description": "Create notify.status tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 479,
+      "category": "notifications",
+      "description": "Implement service status checking",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 480,
+      "category": "notifications",
+      "description": "Create notify.uptime tool",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 481,
+      "category": "notifications",
+      "description": "Implement uptime monitoring",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 482,
+      "category": "notifications",
+      "description": "Create notification persistence",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 483,
+      "category": "notifications",
+      "description": "Create notifications comprehensive test suite",
+      "context": "See PRD for full context",
+      "verification": "cd ~/remote-mcp-server && test -f src/tools/notify.ts && echo \"exists\"",
+      "expectedResult": "exists",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false
+    },
+    {
+      "id": 16,
+      "category": "dependencies",
+      "description": "Install core runtime dependencies",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"const p=require('./package.json'); console.log(Object.keys(p.dependencies||{}).length)\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false,
+      "agentId": "86068"
+    },
+    {
+      "id": 17,
+      "category": "dependencies",
+      "description": "Install development dependencies",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"const p=require('./package.json'); console.log(Object.keys(p.devDependencies||{}).length)\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false,
+      "agentId": "18865"
+    },
+    {
+      "id": 18,
+      "category": "dependencies",
+      "description": "Install image processing dependency (sharp)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('sharp')\" 2>&1 && echo \"ok\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false,
+      "agentId": "37404"
+    },
+    {
+      "id": 19,
+      "category": "dependencies",
+      "description": "Install terminal emulation dependency (node-pty)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('node-pty')\" 2>&1 && echo \"ok\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false,
+      "agentId": "45455"
+    },
+    {
+      "id": 20,
+      "category": "dependencies",
+      "description": "Install browser automation dependency (playwright)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && npx playwright --version",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:42:50.853Z",
+      "agentId": "51236",
+      "completedAt": "2026-03-15T22:43:15.805Z",
+      "verifiedAt": "2026-03-15T22:53:39.229Z"
+    },
+    {
+      "id": 21,
+      "category": "dependencies",
+      "description": "Install database client dependency (pg)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('pg')\" 2>&1 && echo \"ok\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": false,
+      "agentId": "14628"
+    },
+    {
+      "id": 22,
+      "category": "dependencies",
+      "description": "Install scheduler dependency (node-cron)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('node-cron')\" 2>&1 && echo \"ok\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": true,
+      "startedAt": "2026-03-15T22:54:39.760Z",
+      "agentId": "19827",
+      "completedAt": "2026-03-15T22:55:11.680Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"[eval]:1\nrequire(node-cron)\n        ^\n\nReferenceError: node is not defined\n    at [eval]:1:9\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    a\""
+    },
+    {
+      "id": 23,
+      "category": "dependencies",
+      "description": "Install file watching dependency (chokidar)",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('chokidar')\" 2>&1 && echo \"ok\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:55:44.967Z",
+      "agentId": "28056",
+      "completedAt": "2026-03-15T22:56:05.287Z",
+      "verifiedAt": "2026-03-15T22:56:06.075Z"
+    },
+    {
+      "id": 24,
+      "category": "dependencies",
+      "description": "Install all @types/* type definitions",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && ls node_modules/@types 2>/dev/null | head -5",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T22:56:07.115Z",
+      "agentId": "29959",
+      "completedAt": "2026-03-15T22:58:52.161Z",
+      "verifiedAt": "2026-03-15T22:58:52.605Z"
+    },
+    {
+      "id": 25,
+      "category": "dependencies",
+      "description": "Verify all dependencies resolve correctly",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && node -e \"require('./package.json'); console.log('ok')\"",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": true,
+      "startedAt": "2026-03-15T22:58:53.642Z",
+      "agentId": "42010",
+      "completedAt": "2026-03-15T23:01:46.458Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"\""
+    },
+    {
+      "id": 26,
+      "category": "dependencies",
+      "description": "Lock dependency versions",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "ls ~/remote-mcp-server/package-lock.json ~/remote-mcp-server/pnpm-lock.yaml 2>/dev/null | head -1",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": false,
+      "failed": true,
+      "startedAt": "2026-03-15T23:04:52.993Z",
+      "agentId": "68563",
+      "completedAt": "2026-03-15T23:05:15.348Z",
+      "error": "Verification failed after retry: Expected \"ok\" but got \"/Users/autumnraymccall/remote-mcp-server/pnpm-lock.yaml\""
+    },
+    {
+      "id": 27,
+      "category": "dependencies",
+      "description": "Audit dependencies for vulnerabilities",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "cd ~/remote-mcp-server && npm audit --audit-level=high 2>&1 | tail -3",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T23:12:04.477Z",
+      "agentId": "99291",
+      "completedAt": "2026-03-15T23:17:24.650Z",
+      "verifiedAt": "2026-03-15T23:17:25.978Z"
+    },
+    {
+      "id": 28,
+      "category": "dependencies",
+      "description": "Document dependency purposes in README",
+      "context": "\u2502   \u2502   \u251c\u2500\u2500 dependencies.ts # Task dependency resolution\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 teams/              # Agent team management\n\u2502   \u2502   \u251c\u2500\u2500 composer.ts     # Compose teams for projects\n\u2502   \u2502   \u251c\u2500\u2500 roles.ts        # Role definitions (dev, reviewer, tester)\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u251c\u2500\u2500 review/             # Code review automation\n\u2502   \u2502   \u251c\u2500\u2500 reviewer.ts     # Automated code review\n\u2502   \u2502   \u251c\u2500\u2500 merge.ts        # Merge decision engine\n\u2502   \u2502   \u2514\u2500\u2500 types.ts\n\u2502   \u2514\u2500\u2500 reporting/          # Progress repo",
+      "verification": "grep -i \"dependenc\" ~/remote-mcp-server/README.md | head -1",
+      "expectedResult": "ok",
+      "dependencies": [
+        1
+      ],
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-15T23:17:27.013Z",
+      "agentId": "23710",
+      "completedAt": "2026-03-15T23:18:04.666Z",
+      "verifiedAt": "2026-03-15T23:18:05.089Z"
+    }
+  ]
+}
