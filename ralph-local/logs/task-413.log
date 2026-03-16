@@ -1,0 +1,1 @@
+{"success": true, "summary": "Implemented real mcp.logs retrieval in ~/remote-mcp-server/src/self-update/updater.ts with file, command, default-path, and verification-output log sources; added tailed log snapshots and updated tests in tests/self-update/updater.test.ts. Verification passed: npm test succeeded and required check returned 'exists'."}
