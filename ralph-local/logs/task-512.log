@@ -1,0 +1,1 @@
+{"success": true, "summary": "Added a new secrets.list tool to /Users/Apple/remote-mcp-server/src/tools/secrets.ts with structured list output and audit metadata, added coverage in tests/tools/secrets.test.ts, verified with npm test, and confirmed required file exists via `cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"` -> exists"}
