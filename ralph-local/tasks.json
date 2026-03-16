@@ -2,7 +2,7 @@
   "prd": "Pi Fleet Local",
   "createdAt": "2026-03-15T21:11:00.596Z",
   "totalTasks": 348,
-  "completedTasks": 41,
+  "completedTasks": 45,
   "failedTasks": 0,
   "tasks": [
     {
@@ -1674,8 +1674,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T03:08:51.468Z",
+      "completedAt": "2026-03-16T03:09:35.838Z",
+      "verifiedAt": "2026-03-16T03:09:35.854Z"
     },
     {
       "id": 512,
@@ -1685,8 +1688,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T03:09:43.274Z",
+      "completedAt": "2026-03-16T03:13:23.121Z",
+      "verifiedAt": "2026-03-16T03:13:23.138Z"
     },
     {
       "id": 513,
@@ -1696,8 +1702,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T03:13:28.134Z",
+      "completedAt": "2026-03-16T03:14:34.658Z",
+      "verifiedAt": "2026-03-16T03:14:34.673Z"
     },
     {
       "id": 514,
@@ -1707,8 +1716,11 @@
       "verification": "cd ~/remote-mcp-server && test -f src/tools/secrets.ts && echo \"exists\"",
       "expectedResult": "exists",
       "dependencies": [],
-      "completed": false,
-      "failed": false
+      "completed": true,
+      "failed": false,
+      "startedAt": "2026-03-16T03:14:39.706Z",
+      "completedAt": "2026-03-16T03:18:01.262Z",
+      "verifiedAt": "2026-03-16T03:18:01.274Z"
     },
     {
       "id": 515,
