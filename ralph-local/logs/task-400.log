@@ -1,0 +1,1 @@
+{"success": true, "summary": "Added mcp.restart support in /Users/Apple/remote-mcp-server/src/self-update/updater.ts with structured restart results and verification gating, added test coverage in /Users/Apple/remote-mcp-server/tests/self-update/updater.test.ts, verified with npm test, and required check passed: exists"}
